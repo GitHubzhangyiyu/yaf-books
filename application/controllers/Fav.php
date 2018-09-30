@@ -38,6 +38,30 @@ Class FavController extends Yaf_Controller_Abstract
             {
                 exit($this->_util->reg_json(-1,"收藏商品失败"));
             }
+            $this->redirect("/");
+            return false;
+        }
+    }
+
+    public function listAction()
+    {
+        $where = Yaf_Session::getInstance()->get("user_uuid");
+        $favData = $this->_fav->selectAll($where);
+        $this->getView()->assign("items", $favData);
+
+        return true;
+    }
+
+    public function delAction()
+    {
+        $fav_id = $this->getRequest()->getQuery("name");
+        if($this->_fav->del($fav_id))
+        {
+            exit($this->_util->ret_json(2,"删除商品成功"));
+        }
+        else
+        {
+            exit($this->_util->ret_json(-2,"删除商品失败"));
         }
     }
 }

@@ -7,7 +7,7 @@ define(function (){
         },function (data) {
             data = $.parseJSON(data);
             if(data.code==0)
-                //如果网址是来自其他页面的跳转，则会自动跳转到原来用户请求的页面
+            //如果网址是来自其他页面的跳转，则会自动跳转到原来用户请求的页面
                 if(location.search==""){
                     location.href="/index";
                 }else{

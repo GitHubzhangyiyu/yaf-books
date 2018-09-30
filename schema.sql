@@ -73,11 +73,14 @@ CREATE TABLE IF NOT EXISTS `book_user` (
     `user_uuid` varchar(36) NOT NULL,
     `username` varchar(20) NOT NULL,
     `password` varchar(40) NOT NULL,
-    `eamil` varchar(40) NOT NULL,
+    `email` varchar(40) NOT NULL,
     `phone` int(10) unsigned NULL,
     `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
     `is_del` bit(1) NOT NULL DEFAULT b'0',
     PRIMARY KEY (`user_id`),
     UNIQUE KEY `user_id_UNIQUE`(`user_id`, `user_uuid`),
     KEY `user_uuid_idx` (`user_uuid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+INSERT INTO `book_user`(`user_id`, `user_uuid`, `username`, `password`, `email`, `phone`, `create_time`, `is_del`) VALUES
+    (1, '62EDF0BA-3060-4D89-3010-0CD37F2EC6B8', 'zhangyiyu', '89e495e7941cf9e40e6980d14a16bf023ccd4c91', 'a125@qq.com', NULL, '2018-09-28 10:55:01', b'0');
