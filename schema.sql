@@ -84,3 +84,6 @@ CREATE TABLE IF NOT EXISTS `book_user` (
 
 INSERT INTO `book_user`(`user_id`, `user_uuid`, `username`, `password`, `email`, `phone`, `create_time`, `is_del`) VALUES
     (1, '62EDF0BA-3060-4D89-3010-0CD37F2EC6B8', 'zhangyiyu', '89e495e7941cf9e40e6980d14a16bf023ccd4c91', 'a125@qq.com', NULL, '2018-09-28 10:55:01', b'0');
+
+INSERT INTO `book_admin`(`admin_id`, `username`, `email`, `password`, `create_time`, `is_del`) VALUES
+    (1, 'zhangyiyu', 'a125@qq.com', '89e495e7941cf9e40e6980d14a16bf023ccd4c91', '2018-09-28 10:55:01', b'0');

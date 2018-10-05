@@ -27,6 +27,6 @@ Class Utils
         $ret['code'] = $code;
         $ret['msg'] =  $msg;
 
-        return json_encode($ret);
+        return json_encode($ret, JSON_UNESCAPED_UNICODE);
     }
 }

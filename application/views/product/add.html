@@ -1,0 +1,56 @@
+<?php require "head.html"; ?>
+<?php require "side.html"; ?>
+
+<div class="content">
+    <div class="header">
+        <h1 class="page-title">书籍增删改查</h1>
+    </div>
+    <ul class="breadcrumb">
+        <li><a href="/product/list">书籍操作</a> <span class="divider">/</span></li>
+        <li class="active">书籍增删改查</li>
+    </ul>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="well">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#">填写信息</a></li>
+                </ul>
+
+                <p>新增书籍</p>
+                <form action="/product/add" method=POST>
+                    <input name="product_name" type="text" placeholder="product_name">
+                    <input name="score" type="text" placeholder="score">
+                    <input name="category_id" type="text" placeholder="category">
+                    <input name="writer" type="text" placeholder="writer">
+                    <input name="detailed_introduction" type="textarea" placeholder="detailed_introduction">
+                    <input type="submit" class="btn btn-primary" value="add">
+                </form>
+
+                <p>修改书籍</p>
+                <form action="/product/edit" method=POST>
+                    <input name="product_uuid" type="text" placeholder="product_uuid">
+                    <input name="score" type="text" placeholder="score">
+                    <input name="category_id" type="text" placeholder="category">
+                    <input name="writer" type="text" placeholder="writer">
+                    <input name="detailed_introduction" type="textarea" placeholder="detailed_introduction">
+                    <input type="submit" class="btn btn-primary" value="add">
+                </form>
+
+                <p>删除书籍</p>
+                <form action="/product/del" method=POST>
+                    <input name="product_uuid" type="text" placeholder="product_uuid">
+                    <input type="submit" class="btn btn-primary" value="delete">
+                </form>
+
+                <p>查找书籍</p>
+                <form action="/product/get" method=GET>
+                    <input name="product_uuid" type="text" placeholder="product_uuid">
+                    <input type="submit" class="btn btn-primary" value="get">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php require "foot.html"; ?>

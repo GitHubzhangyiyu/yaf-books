@@ -184,4 +184,68 @@ class ProductModel
         $result = $this->_db->select($this->_table, $params, $whereis);
         return $result==null?false:$result;
     }
+
+    //判断是否已经有了该书籍
+    public function select_product_name($product_name)
+    {
+        $params = array(
+            "product_uuid"
+        );
+        $whereis = array(
+            "product_name"=>$product_name
+        );
+        $result = $this->_db->select($this->_table, $params, $whereis);
+        return $result==null?false:true;
+    }
+
+    //新增书籍
+    public function insert($info)
+    {
+        //这里主要是判断是否已经有了该书籍
+        if($this->select_product_name($info['product_name'])==false && !($this->select($info[$this->_index])))
+        {
+            $result = $this->_db->insert($this->_table, $info);
+            return $result<1?false:true;
+        }
+        return false;
+    }
+
+    //修改书籍
+    public function update($product_uuid, $info)
+    {
+        $whereis = array($this->_index => $product_uuid);
+        $result = $this->_db->update($this->_table, $info, $whereis);
+
+        return $result<1?false:true;
+    }
+
+    //删除书籍
+    public function del($product_uuid)
+    {
+        $params = array('is_del' => '1');
+        $whereis = array($this->_index => $product_uuid);
+        $result = $this->_db->update($this->_table, $params, $whereis);
+
+        return $result<1?false:true;
+    }
+
+    //返回所有书籍信息
+    public function selectAll()
+    {
+        $params = array(
+            "product_id",
+            "product_uuid",
+            "product_name",
+            "reg_time",
+            "score",
+            "category_id",
+            "writer",
+            "detailed_introduction"
+        );
+        $whereis = array(
+            "is_del"=>0
+        );
+        $result = $this->_db->select($this->_table, $params, $whereis);
+        return $result==null?false:$result;
+    }
 }
