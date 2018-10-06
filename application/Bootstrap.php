@@ -33,17 +33,13 @@ class Bootstrap extends Yaf_Bootstrap_Abstract
         $this->_db = new Db($this->_config->mysql->read->toArray());
         Yaf_Registry::set('_db', $this->_db);
     }
-    
+
+    //载入缓存类redis
     public function _initCache(Yaf_Dispatcher $dispatcher)
     {
-        //redis 扩展
-        $cache_server = $this->_config->cache;
-        if ($cache_server['isopen']!=0)
-        {
-            $this->_cache = new cache();
-            $this->_cache->addServer($cache_server['host'], $cache_server['port']);
-            Yaf_Registry::set('_cache', $this->_cache);
-        }
+        $cache_config['port'] = $this->_config->cache->port;
+        $cache_config['host'] = $this->_config->cache->host;
+        Yaf_Registry::set('redis', new Rdb($cache_config));
     }  
 
     public function _initSession($dispatcher)

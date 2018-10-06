@@ -1,0 +1,27 @@
+<?php include APP_PATH."application/views/head.html" ?>
+
+<ol class="breadcrumb">
+    <li><a href="/">主页</a></li>
+    <li class="active">登陆</li>
+</ol>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="well">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#">注册</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane active in" id="home">
+                    <form action="" method=POST>
+                        <input name="username" type="text" placeholder="输入用户名">
+                        <input name="password" type="password" placeholder="输入密码">
+                        <input name="repassword" type="password" placeholder="重新输入密码">
+                        <input name="email" type="text" placeholder="输入email">
+                        <input type="submit" class="btn btn-primary " value="注册">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

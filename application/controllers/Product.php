@@ -14,6 +14,12 @@ class ProductController extends Yaf_Controller_Abstract
             $this->getRequest()->getControllerName().'_'.$this->getRequest()->getActionName()
         ));
 
+        $admin_username = Yaf_Session::getInstance()->get("admin_username");
+        if($admin_username == null)
+        {
+            $this->forward("Admin","login");
+            return false;
+        }
         if($this->getRequest()->isPost())
         {
             $posts = $this->getRequest()->getPost();
@@ -98,6 +104,12 @@ class ProductController extends Yaf_Controller_Abstract
             $this->getRequest()->getControllerName().'_'.$this->getRequest()->getActionName()
         ));
 
+        $admin_username = Yaf_Session::getInstance()->get("admin_username");
+        if($admin_username == null)
+        {
+            $this->forward("Admin","login");
+            return false;
+        }
         $productData = $this->_product->selectAll();
         $this->getView()->assign("productData", $productData);
 

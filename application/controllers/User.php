@@ -41,8 +41,41 @@ class UserController extends Yaf_Controller_Abstract
     {
         if($this->getRequest()->isPost())
         {
-            $username = $this->getRequest()->getPost('username');
-
+            $posts = $this->getRequest()->getPost();
+            $posts['password'] = sha1($posts['password']);
+            $posts['repassword'] = sha1($posts['repassword']);
+            $posts['user_uuid'] = $this->_util->guid();
+            foreach($posts as $v)
+            {
+                if(empty($v))
+                {
+                    //不能为空
+                    exit($this->_util->ret_json(2, "不能为空"));
+                }
+            }
+            if($posts['password'] != $posts['repassword'])
+            {
+                //两次密码不一致
+                exit($this->_util->ret_json(3, "两次密码不一致"));
+            }
+            unset($posts['repassword']);
+            unset($posts['submit']);
+            if($ret = $this->_user->registerUser($posts))
+            {
+                exit($this->_util->ret_json(4, "注册成功"));
+            }
+            else
+            {
+                exit($this->_util->ret_json(5, "注册失败"));
+            }
         }
+    }
+
+    public function logoutAction()
+    {
+        Yaf_Session::getInstance()->del('username');
+        Yaf_Session::getInstance()->del('user_uuid');
+        Yaf_Session::getInstance()->del('order_serial');
+        header('location:/index/');
     }
 }

@@ -92,6 +92,12 @@ class AdminController extends Yaf_Controller_Abstract
             $this->getRequest()->getControllerName().'_'.$this->getRequest()->getActionName()
         ));
 
+        $admin_username = Yaf_Session::getInstance()->get("admin_username");
+        if($admin_username == null)
+        {
+            $this->forward("login");
+            return false;
+        }
         if($this->getRequest()->isPost())
         {
             $posts = $this->getRequest()->getPost();
@@ -127,5 +133,11 @@ class AdminController extends Yaf_Controller_Abstract
                 exit($ret);
             }
         }
+    }
+
+    public function logoutAction()
+    {
+        Yaf_Session::getInstance()->del("admin_username");
+        header('Location:/admin/');
     }
 }

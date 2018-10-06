@@ -29,9 +29,9 @@ Class FavController extends Yaf_Controller_Abstract
         }
         else
         {
-            if($posts['user_uuid']==NULL)
+            if($posts['user_uuid']==null)
             {
-                $this->forward("index", "user", "login");
+                $this->forward("User", "login");
                 return false;
             }
             if($this->getRequest()->isXmlHttpRequest())

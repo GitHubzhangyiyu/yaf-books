@@ -5,6 +5,7 @@ class ItemController extends Yaf_Controller_Abstract
     public function init()
     {
         $this->_item = new ProductModel();
+        $this->_Rdb = Yaf_Registry::get('redis');
     }
 
     function getAction()
@@ -62,23 +63,44 @@ class ItemController extends Yaf_Controller_Abstract
             $size=3;
         }
 
-
         $keyword = $this->getRequest()->getQuery("name");
-        if( $this->_item->select_name($keyword) )
+        //先从redis缓存里找
+        if($this->_Rdb->isExists("keyword:".$keyword."curPage".intval($page)."curSize".intval($size)))
         {
-            $maxNum   = $this->_item->selectAll_num_byName($keyword);
+            $array = json_decode($this->_Rdb->get("keyword:".$keyword."curPage".intval($page)."curSize".intval($size)), true);
 
-            $items = $this->_item->selectPage_byName($keyword, $page, $size);
-            $this->getView()->assign("items", $items);
+            $this->getView()->assign("maxNum",intval($array['maxNum']));
+            unset($array['maxNum']);
 
-            $this->getView()->assign("maxNum",intval($maxNum));
+            $this->getView()->assign("items", $array);
+
+
             $this->getView()->assign("curPage",intval($page));
             $this->getView()->assign("curSize",intval($size));
             $this->getView()->assign("keyword", $keyword);
         }
+        //缓存里没有再到MySQL里找
         else
         {
-            $this->getView()->assign("error",'查找失败');
+            if( $this->_item->select_name($keyword) )
+            {
+                $maxNum   = $this->_item->selectAll_num_byName($keyword);
+
+                $items = $this->_item->selectPage_byName($keyword, $page, $size);
+                $this->getView()->assign("items", $items);
+
+                $this->getView()->assign("maxNum",intval($maxNum));
+                $this->getView()->assign("curPage",intval($page));
+                $this->getView()->assign("curSize",intval($size));
+                $this->getView()->assign("keyword", $keyword);
+
+                $items['maxNum'] = $maxNum;
+                $this->_Rdb->set("keyword:".$keyword."curPage".intval($page)."curSize".intval($size), json_encode($items));
+            }
+            else
+            {
+                $this->getView()->assign("error",'查找失败');
+            }
         }
 
         echo $this->render("../index/search");
