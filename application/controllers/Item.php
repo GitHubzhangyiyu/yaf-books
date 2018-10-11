@@ -10,7 +10,7 @@ class ItemController extends Yaf_Controller_Abstract
 
     function getAction()
     {
-        $product_name = $this->getRequest()->getQuery("name")==null?$this->getRequest()->getParam("name"):$this->getRequest()->getQuery("name");
+        $product_name = $this->getRequest()->getQuery("name")===null?$this->getRequest()->getParam("name"):$this->getRequest()->getQuery("name");
         if($item = $this->_item->select($product_name))
         {
             $this->getView()->assign("item", $item[0]);
