@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/yaf-books.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/yaf-books.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/Bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/Bootstrap.php" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/application/controllers/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Error.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Error.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Fav.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Fav.php" afterDir="false" />
@@ -232,6 +233,10 @@
       <change beforePath="$PROJECT_DIR$/public/lib/yeti/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/yeti/js/bootstrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/lib/yeti/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/lib/yeti/js/bootstrap.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.sql" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/application/controllers/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/application.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.ini" afterDir="false" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -257,9 +262,14 @@
     <session id="1280083180">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+<<<<<<< HEAD
           <entry key="project.closed" value="12" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.19" value="1" />
+=======
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.22" value="1" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="3" />
           <entry key="project.open.time.25" value="4" />
@@ -275,11 +285,16 @@
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.7" value="1" />
+<<<<<<< HEAD
           <entry key="project.opened" value="28" />
+=======
+          <entry key="project.opened" value="7" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+<<<<<<< HEAD
           <entry key="css" value="4" />
           <entry key="html" value="40" />
           <entry key="ini" value="1" />
@@ -287,11 +302,21 @@
           <entry key="js" value="20" />
           <entry key="php" value="65" />
           <entry key="sql" value="13" />
+=======
+          <entry key="css" value="3" />
+          <entry key="html" value="28" />
+          <entry key="ini" value="1" />
+          <entry key="jpg" value="7" />
+          <entry key="js" value="18" />
+          <entry key="php" value="33" />
+          <entry key="sql" value="9" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< HEAD
           <entry key="CSS" value="4" />
           <entry key="HTML" value="40" />
           <entry key="Image" value="7" />
@@ -300,111 +325,208 @@
           <entry key="PHP" value="65" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SQL" value="13" />
+=======
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="28" />
+          <entry key="Image" value="7" />
+          <entry key="Ini" value="1" />
+          <entry key="JavaScript" value="18" />
+          <entry key="PHP" value="33" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="SQL" value="9" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="html" value="1990" />
           <entry key="ini" value="1" />
           <entry key="js" value="7" />
           <entry key="php" value="15130" />
           <entry key="sql" value="3945" />
+=======
+          <entry key="html" value="1890" />
+          <entry key="ini" value="16" />
+          <entry key="js" value="7" />
+          <entry key="php" value="9430" />
+          <entry key="sql" value="3168" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="HTML" value="1990" />
           <entry key="Ini" value="1" />
           <entry key="JavaScript" value="7" />
           <entry key="PHP" value="15130" />
           <entry key="SQL" value="3945" />
+=======
+          <entry key="HTML" value="1890" />
+          <entry key="Ini" value="16" />
+          <entry key="JavaScript" value="7" />
+          <entry key="PHP" value="9430" />
+          <entry key="SQL" value="3168" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schema.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1200">
               <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1390">
               <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+=======
+        <entry file="file://$PROJECT_DIR$/application/views/head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="124" column="60" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="60" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/application/controllers/Fav.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-90">
               <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+=======
+        <entry file="file://$PROJECT_DIR$/application/Bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="331">
               <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/application.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/application/models/Fav.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+=======
+        <entry file="file://$PROJECT_DIR$/application/controllers/Index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/application/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="61">
               <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+=======
+        <entry file="file://$PROJECT_DIR$/application/controllers/Product.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/application/Bootstrap.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
               <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+=======
+        <entry file="file://$PROJECT_DIR$/schema.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1138">
+              <caret line="88" column="109" lean-forward="true" selection-start-line="88" selection-start-column="109" selection-end-line="88" selection-end-column="109" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/application/library/Rdb.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="945">
               <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+=======
+        <entry file="file://$PROJECT_DIR$/application/views/item/get.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/application/views/user/register.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="14" column="58" lean-forward="true" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+=======
+        <entry file="file://$PROJECT_DIR$/application/views/admin/add.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Product.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -414,6 +536,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -461,11 +585,16 @@
         <option value="$PROJECT_DIR$/application/controllers/Index.php" />
         <option value="$PROJECT_DIR$/application/views/item/index.html" />
         <option value="$PROJECT_DIR$/application/views/index/index.html" />
-        <option value="$PROJECT_DIR$/application/views/item/get.html" />
         <option value="$PROJECT_DIR$/application/views/head.html" />
         <option value="$PROJECT_DIR$/application/views/error/error.html" />
         <option value="$PROJECT_DIR$/application/views/index/category.html" />
         <option value="$PROJECT_DIR$/application/views/index/search.html" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/application/models/Product.php" />
+        <option value="$PROJECT_DIR$/application/library/utils.php" />
+        <option value="$PROJECT_DIR$/schema.sql" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
         <option value="$PROJECT_DIR$/application/views/user/login_.html" />
         <option value="$PROJECT_DIR$/application/views/user/login.html" />
         <option value="$PROJECT_DIR$/public/js/login.js" />
@@ -494,6 +623,16 @@
         <option value="$PROJECT_DIR$/application/models/Fav.php" />
         <option value="$PROJECT_DIR$/schema.sql" />
         <option value="$PROJECT_DIR$/application/models/Admin.php" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/application/controllers/Admin.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/index.html" />
+        <option value="$PROJECT_DIR$/application/views/admin/side.html" />
+        <option value="$PROJECT_DIR$/application/views/item/get.html" />
+        <option value="$PROJECT_DIR$/conf/application.ini" />
+        <option value="$PROJECT_DIR$/application/Bootstrap.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Item.php" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
       </list>
     </option>
   </component>
@@ -503,11 +642,19 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1" />
     <option name="y" value="25" />
     <option name="width" value="953" />
     <option name="height" value="339" />
+=======
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1940" />
+    <option name="y" value="118" />
+    <option name="width" value="1803" />
+    <option name="height" value="871" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -565,6 +712,31 @@
               <item name="yaf-books" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
+            </path>
+            <path>
+              <item name="yaf-books" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaf-books" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="item" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="fav" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
+            </path>
+            <path>
+              <item name="yaf-books" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaf-books" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -573,20 +745,18 @@
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="item" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </path>
             <path>
               <item name="yaf-books" type="b2602c69:ProjectViewProjectNode" />
               <item name="yaf-books" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yaf-books" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yaf-books" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="user" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </path>
             <path>
               <item name="yaf-books" type="b2602c69:ProjectViewProjectNode" />
@@ -602,7 +772,24 @@
               <item name="yaf-books" type="b2602c69:ProjectViewProjectNode" />
               <item name="yaf-books" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="images" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yaf-books" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaf-books" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yaf-books" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yaf-books" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
             </path>
             <path>
               <item name="yaf-books" type="b2602c69:ProjectViewProjectNode" />
@@ -699,6 +886,7 @@
       <workItem from="1538181729534" duration="27999000" />
       <workItem from="1538267979321" duration="12057000" />
       <workItem from="1538283953182" duration="14448000" />
+<<<<<<< HEAD
       <workItem from="1538322608256" duration="236000" />
       <workItem from="1538323909558" duration="7000" />
       <workItem from="1538392809421" duration="3949000" />
@@ -721,16 +909,29 @@
       <workItem from="1538808695411" duration="8689000" />
       <workItem from="1538828585580" duration="2240000" />
       <workItem from="1539266925085" duration="3043000" />
+=======
+      <workItem from="1538960017193" duration="13887000" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="134831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1849" height="864" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30005547" />
+=======
+    <option name="totallyTimeSpent" value="96199000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1940" y="118" width="1803" height="871" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2072686" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -758,6 +959,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/lib/underscore-min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -776,6 +978,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/foot.html">
+=======
+    <entry file="file://$PROJECT_DIR$/public/css/elements.css">
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="39" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="39" />
@@ -815,6 +1020,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/views/fav/list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -830,6 +1036,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/login.html">
+=======
+    <entry file="file://$PROJECT_DIR$/application/library/utils.php">
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
@@ -846,6 +1055,7 @@
     <entry file="file://$PROJECT_DIR$/application/views/admin/foot.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/views/admin/head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -854,6 +1064,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Index.php">
+=======
+    <entry file="file://$PROJECT_DIR$/public/lib/yeti/css/bootstrap.css">
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
@@ -870,6 +1083,7 @@
     <entry file="file://$PROJECT_DIR$/application/views/product/foot.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/lib/jquery/jquery.upload.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -879,6 +1093,10 @@
           <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/public/lib/jquery-1.7.2.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/product/head.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -890,24 +1108,39 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/views/product/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="38" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/public/lib/underscore-min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="60">
           <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+=======
+        <state relative-caret-position="75">
+          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="390">
           <caret line="26" column="51" lean-forward="true" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+=======
+        <state relative-caret-position="-3">
+          <caret line="1807" column="72" lean-forward="true" selection-start-line="1807" selection-start-column="72" selection-end-line="1807" selection-end-column="72" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
         </state>
       </provider>
     </entry>
@@ -925,6 +1158,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/views/user/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -933,6 +1167,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/User.php">
+=======
+    <entry file="file://$PROJECT_DIR$/public/js/cart.js" />
+    <entry file="file://$PROJECT_DIR$/public/js/forp.min.js" />
+    <entry file="file://$PROJECT_DIR$/public/js/login.js">
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="62" column="57" lean-forward="true" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
@@ -946,6 +1185,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/controllers/Product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -955,6 +1195,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Redis.php" />
     <entry file="file://$PROJECT_DIR$/application/controllers/Item.php">
+=======
+    <entry file="file://$PROJECT_DIR$/public/js/math.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/module.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/yeti/bootstrap的主题文件夹.txt" />
+    <entry file="file://$PROJECT_DIR$/public/js/fav.js">
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
@@ -971,6 +1224,7 @@
     <entry file="file://$PROJECT_DIR$/application/views/index/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/views/index/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -989,11 +1243,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+=======
+    <entry file="file://$PROJECT_DIR$/application/models/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="152" column="14" selection-start-line="152" selection-start-column="14" selection-end-line="152" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Fav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="41" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/library/Rdb.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="945">
           <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
         </state>
@@ -1010,23 +1285,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-90">
           <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+=======
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Fav.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/foot.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/side.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="375">
           <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Product.php">
+=======
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/library/Rdb.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/item/get.html">
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-180">
           <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/application/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
@@ -1055,5 +1385,59 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/application/controllers/Product.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="124" column="60" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/application.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1138">
+          <caret line="88" column="109" lean-forward="true" selection-start-line="88" selection-start-column="109" selection-end-line="88" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 43331ad142fafa5d69f489ff4d9640987af34ef7
   </component>
 </project>
