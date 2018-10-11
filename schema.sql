@@ -1,58 +1,56 @@
 CREATE DATABASE IF NOT EXISTS `book` ;
 USE `book`;
 CREATE TABLE IF NOT EXISTS `book_admin`(
-    `admin_id` int(11) NOT NULL AUTO_INCREMENT,
-    `username` varchar(16) NOT NULL,
-    `email` varchar(255) DEFAULT NULL,
-    `password` varchar(40) NOT NULL,
-    `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-    `is_del` bit(1) DEFAULT NULL,
+    `admin_id` int(11) NOT NULL AUTO_INCREMENT comment '管理员id',
+    `username` varchar(16) NOT NULL default '' comment '管理员用户名',
+    `email` varchar(255) DEFAULT '' comment '电子邮箱',
+    `password` varchar(40) NOT NULL default '',
+    `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP comment '管理员创建时间',
+    `is_del` bit(1) DEFAULT b'0' comment '是否被删除，默然为否',
     PRIMARY KEY (`admin_id`),
-    UNIQUE KEY `username` (`username`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+    UNIQUE KEY `username` (`username`) comment '用户名唯一性'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 comment '图书管理员表';
 
 CREATE TABLE IF NOT EXISTS `book_category`(
     `category_id` int(11) NOT NULL AUTO_INCREMENT,
-    `cate_name` varchar(45) NOT NULL,
-    `parent_id` varchar(45) NOT NULL,
-    `category_layer` int(6) unsigned zerofill DEFAULT NULL,
+    `cate_name` varchar(45) NOT NULL default '' comment '图书分类名称',
+    `parent_id` int(11) NOT NULL default 0 comment '该分类父类型id',
     PRIMARY KEY (`category_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 comment '图书分类表';
 
-INSERT INTO `book_category` (`category_id`, `cate_name`, `parent_id`, `category_layer`) VALUES
-	(1, '计算机系列', '0', 000100),
-	(2, '编程', '1', 000101),
-	(3, '算法', '1', 000102),
-	(4, '文学小说', '0', 000200),
-	(5, '中国文学', '4', 000201),
-	(6, '外国文学', '4', 000202);
+INSERT INTO `book_category` (`category_id`, `cate_name`, `parent_id`) VALUES
+	(1, '计算机系列', 0),
+	(2, '编程', 1),
+	(3, '算法', 1),
+	(4, '文学小说', 0),
+	(5, '中国文学', 4),
+	(6, '外国文学', 4);
 
 CREATE TABLE IF NOT EXISTS `book_fav` (
     `fav_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-    `user_uuid` varchar(36) NOT NULL,
-    `product_uuid` varchar(36) NOT NULL,
-    `fav_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    `comment` varchar(45) DEFAULT NULL,
+    `user_uuid` varchar(36) NOT NULL default '' comment '用户uuid',
+    `product_uuid` varchar(36) NOT NULL default '' comment '图书uuid',
+    `fav_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP comment '加入收藏夹时间',
     PRIMARY KEY (`fav_id`),
-    KEY `user_uuid_idx` (`user_uuid`),
+    KEY `user_uuid_idx` (`user_uuid`) comment '在用户uuid上建索引',
     CONSTRAINT `fk_fav_user_uuid` FOREIGN KEY (`user_uuid`) REFERENCES `book_user` (`user_uuid`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 comment '图书收藏夹表';
 
 CREATE TABLE IF NOT EXISTS `book_product` (
     `product_id` int(11) NOT NULL AUTO_INCREMENT,
-    `product_uuid` varchar(36) NOT NULL,
-    `product_name` varchar(45) NOT NULL,
-    `reg_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    `score` int(11),
-    `category_id` int(11) NOT NULL,
-    `writer` varchar(45) NOT NULL,
-    `detailed_introduction` TEXT NOT NULL,
-    `is_del` bit(1) NOT NULL,
+    `product_uuid` varchar(36) NOT NULL default '' comment '图书uuid',
+    `product_name` varchar(45) NOT NULL default '' comment '图书名称',
+    `reg_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP comment '添加时间',
+    `score` int(11) default 0 comment '图书评分',
+    `category_id` int(11) NOT NULL default 0 comment '分类id',
+    `writer` varchar(45) NOT NULL default '' comment '作者',
+    `detailed_introduction` TEXT NOT NULL comment '详细介绍',
+    `is_del` bit(1) NOT NULL default b'0',
     PRIMARY KEY (`product_id`),
-    KEY `product_uuid_index` (`product_uuid`),
-    KEY `pk_category_id` (`category_id`),
+    KEY `product_uuid_index` (`product_uuid`) comment '在图书uuid上建索引',
+    KEY `pk_category_id` (`category_id`) comment '在分类id上建索引',
     CONSTRAINT `fk_category_id` FOREIGN KEY (`category_id`) REFERENCES `book_category` (`category_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 comment '书籍信息表';
 
 INSERT INTO `book_product` (`product_id`, `product_uuid`, `product_name`, `reg_time`, `score`, `category_id`, `writer`, `detailed_introduction`, `is_del`) VALUES
     (1, '12163A7E-0C61-6E11-567B-18971683E15C', 'C程序设计语言', '2018-09-28 10:55:01', 94, 2, '(美)Brian W. Kernighan', '在计算机发展的历史上，没有哪一种程序设计语言像C语言这样应用广泛。本书原著即为C语言的设计者之一Dennis M.Ritchie和著名计算机科学家Brian W.Kernighan合著的一本介绍C语言的权威经典著作。我们现在见到的大量论述C语言程序设计的教材和专著均以此书为蓝本。原著第1版中介绍的C语言成为后来广泛使用的C语言版本——标准C的基础。人们熟知的“hello,World"程序就是由本书首次引入的，现在，这一程序已经成为众多程序设计语言入门的第一课。原著第2版根据1987年制定的ANSIC标准做了适当的修订．引入了最新的语言形式，并增加了新的示例，通过简洁的描述、典型的示例，作者全面、系统、准确地讲述了C语言的各个特性以及程序设计的基本方法。对于计算机从业人员来说，《C程序设计语言》是一本必读的程序设计语 言方面的参考书。', b'0'),
@@ -70,20 +68,19 @@ INSERT INTO `book_product` (`product_id`, `product_uuid`, `product_name`, `reg_t
 
 CREATE TABLE IF NOT EXISTS `book_user` (
     `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-    `user_uuid` varchar(36) NOT NULL,
-    `username` varchar(20) NOT NULL,
-    `password` varchar(40) NOT NULL,
+    `user_uuid` varchar(36) NOT NULL default '' comment '用户uuid',
+    `username` varchar(20) NOT NULL default '' comment '用户名',
+    `password` varchar(40) NOT NULL default '',
     `email` varchar(40) NOT NULL,
-    `phone` int(10) unsigned NULL,
-    `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+    `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP comment '用户创建时间',
     `is_del` bit(1) NOT NULL DEFAULT b'0',
     PRIMARY KEY (`user_id`),
     UNIQUE KEY `user_id_UNIQUE`(`user_id`, `user_uuid`),
-    KEY `user_uuid_idx` (`user_uuid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+    KEY `user_uuid_idx` (`user_uuid`) comment '在用户uuid上建索引'
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 comment '普通用户表';
 
-INSERT INTO `book_user`(`user_id`, `user_uuid`, `username`, `password`, `email`, `phone`, `create_time`, `is_del`) VALUES
-    (1, '62EDF0BA-3060-4D89-3010-0CD37F2EC6B8', 'zhangyiyu', '89e495e7941cf9e40e6980d14a16bf023ccd4c91', 'a125@qq.com', NULL, '2018-09-28 10:55:01', b'0');
+INSERT INTO `book_user`(`user_id`, `user_uuid`, `username`, `password`, `email`, `create_time`, `is_del`) VALUES
+    (1, '62EDF0BA-3060-4D89-3010-0CD37F2EC6B8', 'zhangyiyu', '89e495e7941cf9e40e6980d14a16bf023ccd4c91', 'a125@qq.com','2018-09-28 10:55:01', b'0');
 
 INSERT INTO `book_admin`(`admin_id`, `username`, `email`, `password`, `create_time`, `is_del`) VALUES
     (1, 'zhangyiyu', 'a125@qq.com', '89e495e7941cf9e40e6980d14a16bf023ccd4c91', '2018-09-28 10:55:01', b'0');

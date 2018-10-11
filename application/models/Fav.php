@@ -48,7 +48,6 @@ class FavModel
             "product_name",
             "product_uuid",
             "fav_time",
-            "comment",
             "writer"
         );
         $whereis = array("user_uuid"=>$where);

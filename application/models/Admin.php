@@ -35,7 +35,7 @@ Class AdminModel
         }
     }
 
-    //新增管理员
+    //新增管理员，或者修改管理员密码，邮箱等信息
     public function insert($info)
     {
         $sql = "REPLACE INTO ".$this->_table."(username, email, password, is_del) VALUES('".$info['username']."', '".$info['email']."', '".$info['password']."', b'0');";
