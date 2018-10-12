@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class AdminController
+ * 后台管理员登录和添加管理员在这里
+ */
 class AdminController extends Yaf_Controller_Abstract
 {
     public function init()
@@ -7,22 +11,30 @@ class AdminController extends Yaf_Controller_Abstract
         $this->_user = new AdminModel();
     }
 
+    /**
+     *从session获取信息，来判断有没有登录
+     */
     public function indexAction()
     {
-        $this->getView()->assign("action", strtolower(
+        $this->getView()->assign('action', strtolower(
             $this->getRequest()->getControllerName().'_'.$this->getRequest()->getActionName()
         )
-        );
-        if(Yaf_Session::getInstance()->get("admin_username"))
+        );    //传一个string过去（由控制器名字和action名字拼接而成），view里面根据这个来使左侧菜单栏里选中条目的高亮
+        if(Yaf_Session::getInstance()->get('admin_username'))
         {
-            $this->getView()->assign("isLogin",true);
+            $this->getView()->assign('isLogin',true);
         }
         else
         {
-            $this->getView()->assign("isLogin",false);
+            $this->getView()->assign('isLogin',false);
         }
     }
 
+    /**
+     * @param int $code
+     * @return false|string
+     * 设置好各种返回信息，以json格式提醒用户
+     */
     public function ret_api($code=-1)
     {
         $ret=array();
@@ -58,11 +70,15 @@ class AdminController extends Yaf_Controller_Abstract
         return $util->ret_json($code, $ret[$code]['msg']);
     }
 
+    /**
+     * @return bool
+     *登录的action，如果登录成功了就在session里保存用户名
+     */
     public function loginAction()
     {
-        $this->getView()->assign("action", strtolower(
+        $this->getView()->assign('action', strtolower(
             $this->getRequest()->getControllerName().'_'.$this->getRequest()->getActionName()
-        ));
+        ));    //传一个string过去（由控制器名字和action名字拼接而成），view里面根据这个来使左侧菜单栏里选中条目的高亮
 
         if($this->getRequest()->isPost())
         {
@@ -70,13 +86,13 @@ class AdminController extends Yaf_Controller_Abstract
             $pwd = $this->getRequest()->getPost('password');
 
             $return = $this->_user->loginUser($username, sha1(trim($pwd)));
-            if($return)
+            if($return)    //登录成功
             {
-                Yaf_Session::getInstance()->set("admin_username", $username);
+                Yaf_Session::getInstance()->set('admin_username', $username);
                 $ret = $this->ret_api(0);
                 exit($ret);
             }
-            else
+            else    //登录不成功
             {
                 $ret = $this->ret_api(1);
                 exit($ret);
@@ -86,19 +102,23 @@ class AdminController extends Yaf_Controller_Abstract
         return true;
     }
 
+    /**
+     * @return bool
+     * 新增管理员；或者修改已经存在的管理员密码，邮箱等信息
+     */
     public function addAction()
     {
-        $this->getView()->assign("action", strtolower(
+        $this->getView()->assign('action', strtolower(
             $this->getRequest()->getControllerName().'_'.$this->getRequest()->getActionName()
-        ));
+        ));    //传一个string过去（由控制器名字和action名字拼接而成），view里面根据这个来使左侧菜单栏里选中条目的高亮
 
-        $admin_username = Yaf_Session::getInstance()->get("admin_username");
-        if($admin_username == null)
+        $admin_username = Yaf_Session::getInstance()->get('admin_username');
+        if($admin_username === null)    //添加管理员的操作要先登录
         {
-            $this->forward("login");
+            $this->forward('login');
             return false;
         }
-        if($this->getRequest()->isPost())
+        if($this->getRequest()->isPost())    //这个if里面处理添加管理员操作
         {
             $posts = $this->getRequest()->getPost();
             $posts['password'] = sha1($posts['password']);
@@ -135,9 +155,12 @@ class AdminController extends Yaf_Controller_Abstract
         }
     }
 
+    /**
+     * 登出的action，把session里面的用户名删掉
+     */
     public function logoutAction()
     {
-        Yaf_Session::getInstance()->del("admin_username");
+        Yaf_Session::getInstance()->del('admin_username');
         header('Location:/admin/');
     }
 }

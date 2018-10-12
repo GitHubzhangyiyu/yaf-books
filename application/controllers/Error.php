@@ -6,7 +6,7 @@
          //1. assign to view engine
          //$exception = $this->getRequest()->getParam('exception');
 
-         $this->getView()->assign("exception", $exception);
+         $this->getView()->assign('exception', $exception);
 
          /*Yaf has a few different types of errors*/
          switch($exception->getCode()):
